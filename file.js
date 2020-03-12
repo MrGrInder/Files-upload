@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function createNothingItem() {
     let nothingItem = document.createElement('p');
     nothingItem.classList.add('nothing-files');
-    nothingItem.text = 'Не загружено ни одного файла';
+    nothingItem.textContent = 'Не загружено ни одного файла';
 
     return nothingItem;
   }

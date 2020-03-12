@@ -39,6 +39,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     echo jsonResponse(200, ['filesList' => $filesList]);
 
     closedir($handle);
+  } else {
+    echo jsonResponse(500, ['message' => 'Ошибка!', 'fullText' => 'Невозможно открыть директорию с файлами']);
   }
 }
 
